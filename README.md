@@ -1,9 +1,8 @@
 # Using-Spec-kit-Step-by-Step
-Using Github Spec-kit Step by Step
 
-ขอทำเป็น Step-by-Step แบบใช้งานจริงบน Windows ก่อนนะครับ (เหมาะกับเคสของคุณที่ใช้ VS / Next.js / .NET):
+ใช้งานจริงบน Windows เหมาะกับเคสที่ใช้ VS / Next.js / .NET:
 
----
+#
 
 ## 0. Concept สั้น ๆ ก่อนเริ่ม
 
@@ -16,7 +15,7 @@ Workflow หลัก:
 2. `plan.md` – วางเทคนิค: ใช้ .NET 8, Next.js, MSSQL, Clean Architecture ฯลฯ
 3. `tasks.md` – แตกงานย่อยเป็น task ให้ลงมือทำทีละอัน
 
----
+#
 
 ## 1. ติดตั้ง UV / UVX (ครั้งเดียว)
 
@@ -39,7 +38,7 @@ uvx --version
 
 ถ้าเห็นเลขเวอร์ชัน แปลว่าพร้อมแล้ว ✅
 
----
+#
 
 ## 2. ติดตั้ง Specify CLI (Spec-Kit)
 
@@ -67,7 +66,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify --help
 
 > ถ้า A ใช้ได้แล้ว ผมแนะนำเรียก `specify` ตรง ๆ เลย สะดวกกว่า
 
----
+#
 
 ## 3. สร้างโปรเจกต์ใหม่ด้วย Spec-Kit
 
@@ -105,7 +104,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify --help
 * `tasks.md`
 * `.speckit/` (config ภายใน) ([GitHub][1])
 
----
+#
 
 ## 4. เปิดโปรเจกต์ใน ChatGPT / Copilot พร้อม Spec-Kit
 
@@ -122,7 +121,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify --help
 
 > ใน ChatGPT ให้พิมพ์คำสั่งเหล่านี้ในแชต แล้วผมจะทำงานตาม spec-kit ให้
 
----
+#
 
 ## 5. ใช้ Spec-Kit เป็นขั้น ๆ (สำหรับเคส ProductUI + ProductAPI)
 
@@ -141,7 +140,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify --help
 
 AI จะสร้างเอกสารหลักการ (เหมือน guideline ของทีม) ลงไฟล์ให้
 
----
+#
 
 ### 5.2 เขียนสเปกระบบ (spec.md) ด้วย `/speckit.specify`
 
@@ -160,7 +159,7 @@ AI จะสร้างเอกสารหลักการ (เหมือ
 ผลลัพธ์จะถูกเขียนลง `spec.md`
 คุณควรเปิดอ่าน ปรับแก้ เพิ่มเงื่อนไขธุรกิจเองให้ตรงกับที่ต้องการ
 
----
+#
 
 ### 5.3 สร้างแผนเทคนิค (plan.md) ด้วย `/speckit.plan`
 
@@ -179,7 +178,7 @@ AI จะสร้างเอกสารหลักการ (เหมือ
 
 AI จะ generate **plan.md** ให้ เป็นเหมือน “Blueprint” วิธี implement
 
----
+#
 
 ### 5.4 แตกงานย่อยเป็น Task (tasks.md) ด้วย `/speckit.tasks`
 
@@ -203,7 +202,7 @@ AI จะ generate **plan.md** ให้ เป็นเหมือน “Bluep
 
 อันนี้คือ To-Do list ให้คุณทำตามทีละข้อ
 
----
+#
 
 ## 6. ใช้ Spec-Kit ระหว่างลงมือโค้ด
 
@@ -227,7 +226,7 @@ AI จะ generate **plan.md** ให้ เป็นเหมือน “Bluep
 4. รัน / แก้เทสต์ / ปรับตามจริง
 5. ถ้า spec/plan เปลี่ยน ให้แก้ไฟล์ `spec.md` & `plan.md` ด้วย (spec เป็น source of truth)
 
----
+#
 
 ## 7. ตรวจสุขภาพ Spec-Kit ด้วย `specify check`
 
@@ -245,7 +244,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify check
 
 มันจะช่วยเช็คโครงสร้างไฟล์ของ Spec-Kit ว่าโอเคไหม ([GitHub][1])
 
----
+#
 
 ## ถัดจากนี้ ผมช่วยอะไรต่อให้ได้บ้าง
 
