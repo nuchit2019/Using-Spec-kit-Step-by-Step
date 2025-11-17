@@ -7,7 +7,7 @@
 ## 0. Concept สั้น ๆ ก่อนเริ่ม
 
 **Spec-Kit คืออะไร?**
-มันคือ tool ที่ช่วยให้เราพิมพ์ “สเปกของโปรเจกต์” (spec.md, plan.md, tasks.md) แล้วค่อยให้ AI ช่วย Generate โค้ดตามสเปก แทนการ “vibe code” ไปเรื่อย ๆ ([GitHub][1])
+มันคือ tool ที่ช่วยให้เราพิมพ์ “สเปกของโปรเจกต์” (spec.md, plan.md, tasks.md) แล้วค่อยให้ AI ช่วย Generate โค้ดตามสเปก แทนการ “vibe code” ไปเรื่อย ๆ
 
 Workflow หลัก:
 
@@ -19,7 +19,7 @@ Workflow หลัก:
 
 ## 1. ติดตั้ง UV / UVX (ครั้งเดียว)
 
-Spec-Kit ใช้ CLI ชื่อ `specify` ที่ติดตั้งผ่าน **uv / uvx** ([GitHub][1])
+Spec-Kit ใช้ CLI ชื่อ `specify` ที่ติดตั้งผ่าน **uv / uvx**
 
 ### 1.1 ติดตั้ง uv/uvx บน Windows
 
@@ -44,7 +44,7 @@ uvx --version
 
 มี 2 แบบ เลือกแบบใดแบบหนึ่งก็ได้ (แนะนำแบบติดตั้งถาวร)
 
-### วิธี A: ติดตั้งถาวร (Recommended) ([GitHub][1])
+### วิธี A: ติดตั้งถาวร (Recommended)
 
 ```powershell
 uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
@@ -102,7 +102,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify --help
 * `spec.md`
 * `plan.md`
 * `tasks.md`
-* `.speckit/` (config ภายใน) ([GitHub][1])
+* `.speckit/` (config ภายใน)
 
 #
 
@@ -112,7 +112,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify --help
 
 1. เปิด VS Code หรือ IDE ที่ใช้
 2. เปิด ChatGPT / GitHub Copilot / Claude Code *ในโฟลเดอร์นี้*
-3. จากนั้นคุณจะสามารถใช้ “คำสั่งแบบ slash” ของ Spec-Kit ในแชตได้ เช่น ([The GitHub Blog][2])
+3. จากนั้นคุณจะสามารถใช้ “คำสั่งแบบ slash” ของ Spec-Kit ในแชตได้ เช่น
 
    * `/speckit.constitution`
    * `/speckit.specify`
@@ -242,7 +242,7 @@ specify check
 uvx --from git+https://github.com/github/spec-kit.git specify check
 ```
 
-มันจะช่วยเช็คโครงสร้างไฟล์ของ Spec-Kit ว่าโอเคไหม ([GitHub][1])
+มันจะช่วยเช็คโครงสร้างไฟล์ของ Spec-Kit ว่าโอเคไหม
 
 #
  
